@@ -1,3 +1,4 @@
+package com.hackathon;
 
 public class Hackathon {
 
