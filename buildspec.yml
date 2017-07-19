@@ -21,5 +21,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/application-1.0.jar
+    - target/hackathon-1.0.0.jar
   discard-paths: yes 
