@@ -1,3 +1,4 @@
+package com.bbva.hackathon;
 
 public class Hackathon {
 
