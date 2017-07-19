@@ -1,4 +1,4 @@
-package com.bbva.hackathon;
+package com.hackathon;
 
 public class Hackathon {
 
