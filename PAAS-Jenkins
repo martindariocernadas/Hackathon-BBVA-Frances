@@ -7,8 +7,26 @@ Hackathon-BBVA-Frances
 Evento en EventBrite        : https://www.eventbrite.com/e/hackathon-bbva-frances-buenos-aires-octubre-2017-tickets-36322832570
 Repo en Github              : https://github.com/martindariocernadas/Hackathon-BBVA-Frances
                                 Jenkins BuildSpec: "buildspec.yml"
+                                Debe existir esta especificacion para Jenkins-AWS como requisito .
+                                Un sencillo ejemplo operativo se encuentra como:
+                                
+                                        version: 0.2
+
+                                        phases:
+                                        build:
+                                            commands:
+                                            - echo Build started on `date`
+                                            - mvn test
+                                        post_build:
+                                            commands:
+                                            - echo Build completed on `date`
+                                            - mvn package
+                                        artifacts:
+                                        files:
+                                            - target/app-1.0-SNAPSHOT.jar
+                                
 AWS Console :               : https://console.aws.amazon.com/console/home
-                                Login a AWS Console (Ej. usuario: "cernadasm@gmail.com") con Tarjeta de Credito habilitada
+                                Login a AWS Console (su usuario en AWS)
 Amazon S3 bucket            : https://aws.amazon.com/s3/ 
                                 Definir un Bucket de persistencia ( "hackaton-bbva-frances" )
                                 URL: https://s3.console.aws.amazon.com/s3/buckets/hackathon-bbva-frances/?region=us-west-2&tab=overview                              
